@@ -1,0 +1,10 @@
+---
+ - hosts: localhost
+   tasks:
+     - name: debug
+       debug:
+         msg: "hello from the other side!"
+     - name: apache
+       apt:
+        name: nginx
+        state: absent
